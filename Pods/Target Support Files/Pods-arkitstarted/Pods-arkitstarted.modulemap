@@ -1,0 +1,6 @@
+framework module Pods_arkitstarted {
+  umbrella header "Pods-arkitstarted-umbrella.h"
+
+  export *
+  module * { export * }
+}

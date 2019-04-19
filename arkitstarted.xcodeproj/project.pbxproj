@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C63733ADD70B5D433773DEF /* Pods_arkitstarted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B290D031200E2B9084538155 /* Pods_arkitstarted.framework */; };
 		5D8C4851224F5AD80044DC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C4850224F5AD80044DC9A /* AppDelegate.swift */; };
 		5D8C4853224F5AD80044DC9A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8C4852224F5AD80044DC9A /* art.scnassets */; };
 		5D8C4855224F5AD80044DC9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C4854224F5AD80044DC9A /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20DD1CDAF8D2158CCFEADAFC /* Pods-arkitstarted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arkitstarted.debug.xcconfig"; path = "Pods/Target Support Files/Pods-arkitstarted/Pods-arkitstarted.debug.xcconfig"; sourceTree = "<group>"; };
+		5208724DB0B1B3F3E5AED95B /* Pods-arkitstarted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arkitstarted.release.xcconfig"; path = "Pods/Target Support Files/Pods-arkitstarted/Pods-arkitstarted.release.xcconfig"; sourceTree = "<group>"; };
 		5D8C484D224F5AD80044DC9A /* arkitstarted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arkitstarted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8C4850224F5AD80044DC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D8C4852224F5AD80044DC9A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5D8C4859224F5ADD0044DC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D8C485C224F5ADD0044DC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D8C485E224F5ADD0044DC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B290D031200E2B9084538155 /* Pods_arkitstarted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arkitstarted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C63733ADD70B5D433773DEF /* Pods_arkitstarted.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0686EEF521ECD8815912D26C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B290D031200E2B9084538155 /* Pods_arkitstarted.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D8C4844224F5AD80044DC9A = {
 			isa = PBXGroup;
 			children = (
 				5D8C484F224F5AD80044DC9A /* arkitstarted */,
 				5D8C484E224F5AD80044DC9A /* Products */,
+				99C4333797E746B4C581EA89 /* Pods */,
+				0686EEF521ECD8815912D26C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = arkitstarted;
 			sourceTree = "<group>";
 		};
+		99C4333797E746B4C581EA89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20DD1CDAF8D2158CCFEADAFC /* Pods-arkitstarted.debug.xcconfig */,
+				5208724DB0B1B3F3E5AED95B /* Pods-arkitstarted.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D8C4861224F5ADD0044DC9A /* Build configuration list for PBXNativeTarget "arkitstarted" */;
 			buildPhases = (
+				596457FFED40FCB26E34F881 /* [CP] Check Pods Manifest.lock */,
 				5D8C4849224F5AD80044DC9A /* Sources */,
 				5D8C484A224F5AD80044DC9A /* Frameworks */,
 				5D8C484B224F5AD80044DC9A /* Resources */,
@@ -133,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		596457FFED40FCB26E34F881 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-arkitstarted-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D8C4849224F5AD80044DC9A /* Sources */ = {
@@ -284,6 +334,7 @@
 		};
 		5D8C4862224F5ADD0044DC9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20DD1CDAF8D2158CCFEADAFC /* Pods-arkitstarted.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +353,7 @@
 		};
 		5D8C4863224F5ADD0044DC9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5208724DB0B1B3F3E5AED95B /* Pods-arkitstarted.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
